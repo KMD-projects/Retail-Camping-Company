@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    width: 100%;
+    font-family: Garamond, serif;
+}
+
+nav {
+    display: block;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.3);
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+nav a {
+    float: left;
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(221, 221, 221, 0.2);
+    color: black;
+}
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+
+.slider p {
+    font-size: x-large;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+figure {
+    width: 500%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    transition: all 1s linear;
+    animation: 50s slidy infinite;
+}
+
+.overlay {
+    width: 500%;
+    height: 100%;
+    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    position: absolute;
+}
+
+.slide {
+    width: 20%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slidy {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: -100%;
+    }
+
+    20% {
+        left: -200%;
+    }
+
+    30% {
+        left: -300%;
+    }
+
+    40% {
+        left: -400%;
+    }
+
+    50% {
+        left: -400%;
+    }
+
+    60% {
+        left: -300%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    85% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+}
+
+.footer-category {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.footer-category-item {
+
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        float: none;
+        display: block;
+    }
+
+    .slider {
+        height: 400px;
+    }
+}
