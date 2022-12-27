@@ -1,30 +1,36 @@
 body {
     margin: 0;
     width: 100%;
-    font-family: Garamond, serif;
+    /* font-family: cursive, serif; */
+    font-family: Arial, sans-serif;
 }
 
-nav {
+.topnav {
     display: block;
     width: 100%;
-    background-color: rgba(51, 51, 51, 0.3);
     overflow: hidden;
     position: absolute;
     z-index: 1;
 }
 
-nav a {
+.topnav a {
     float: left;
-    display: inline;
+    display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 30px 20px;
     text-decoration: none;
+    font-size: 16px;
 }
 
-nav a:hover {
-    background-color: rgba(221, 221, 221, 0.2);
-    color: black;
+.topnav a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+    transform: scale(1.1);
+}
+
+.topnav .icon {
+    display: none;
 }
 
 .slider {
@@ -34,14 +40,24 @@ nav a:hover {
     position: relative;
 }
 
-.slider p {
-    font-size: x-large;
-    color: white;
+.home-text {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-text .title {
+    font-family: 'Courier New', monospace;
+    font-size: 60px;
+    color: white;
+}
+
+.home-text .content {
+    font-size: 20px;
+    color: silver;
 }
 
 figure {
@@ -58,7 +74,7 @@ figure {
 .overlay {
     width: 500%;
     height: 100%;
-    background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
     position: absolute;
 }
 
@@ -121,11 +137,136 @@ figure {
 
 }
 
+.grid-container-4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(min-content, 94rem) minmax(20px, 1fr);
+}
+
+.grid-container-2 {
+    display: grid;
+    /* grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr); */
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-section {
+    grid-column: 2 / 3;
+    position: relative;
+    display: grid;
+    padding: 20px;
+    column-gap: 20px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+}
+
+.home-section img {
+    height: 100%;
+    width: 70%;
+    max-width: 70%;
+    margin: 0 auto;
+    box-shadow: 2px 5px 10px black;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+    box-sizing: border-box;
+}
+
+.home-section p {
+    margin: 0;
+}
+
+.show-off {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column: 2 / 3;
+    position: relative;
+    background-color: #263059;
+    padding: 60px 40px;
+    text-align: center;
+    color: silver;
+}
+
+.show-off-value {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.top-brand-section .map,.video {
+    margin-top: 40px;
+    border: 0;
+    width: 100%;
+    height: 500px;
+}
+
+.top-brand-section h1 {}
+
+.top-brand-section {
+    grid-column: 2 / 3;
+    position: relative;
+}
+
+.top-brand-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.equiment-section {
+    grid-column: 2 / 3;
+    margin: 40px 0px;
+    position: relative;
+    background: linear-gradient(rgba(94, 55, 221, 0.459), rgba(32, 61, 177, 0.7)), url('../images/home-equiment-cover.jpg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.equiment-section-container {
+    text-align: center;
+    color: white;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.top-brand-item {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.top-brand-item img {
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.top-brand-item:hover img {
+    transform: scale(0.9) rotate(5deg);
+}
+
+.top-brand-item-two {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
 footer {
     display: flex;
+    background-color: #212121;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: flex-start;
     gap: 20px;
     left: 0;
     bottom: 0;
@@ -137,10 +278,190 @@ footer {
 .footer-category {
     font-weight: bold;
     font-size: 30px;
+    color: white;
+    margin-top: 50px;
+    padding: 0;
 }
 
 .footer-category-item {
+    margin: 0;
+    color: gray;
+}
 
+
+/* Ads popup */
+.box {
+    width: 60%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+.button {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    background: #06D85F;
+}
+
+.ads-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    /* transition: opacity 500ms; */
+    visibility: hidden;
+    opacity: 0;
+}
+
+.ads-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ads-popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all 3s ease-in-out;
+}
+
+.ads-popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.ads-popup .close:hover {
+    color: #06D85F;
+}
+
+.ads-popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+#btn-close:active {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.offer-header {
+    margin-left: 40px;
+}
+
+.offer-section-title {
+    grid-column: 2 / 3;
+    text-align: center;
+}
+
+.offer-section {
+    grid-column: 2 / 3;
+    position: relative;
+    display: grid;
+    padding: 20px;
+    column-gap: 20px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.offer-section .item {
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.141);
+}
+
+.offer-section .item img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.offer-section .item .content {
+    padding: 20px;
+}
+
+.price {
+    font-size: 30px;
+    color: darkgreen;
+}
+
+
+/* animated border */
+.animated-border-button {
+    background-color: #263059;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    padding: 12px 40px 10px;
+    position: relative;
+  }
+  
+  .animated-border-button::before,
+  .animated-border-button::after {
+    border: 0 solid transparent;
+    transition: all 0.3s;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 24px;
+  }
+  
+  .animated-border-button::before {
+    border-top: 2px solid white;
+    right: 0;
+    top: -4px;
+  }
+  
+  .animated-border-button::after {
+    border-bottom: 2px solid white;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .animated-border-button:hover::before,
+  .animated-border-button:hover::after {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -150,6 +471,62 @@ footer {
     }
 
     .slider {
-        height: 400px;
+        height: 500px;
+    }
+
+    .home-section {
+        row-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .top-brand-container {
+        justify-content: center;
+    }
+
+    .top-brand-item {
+        width: 150px;
+        height: 150px;
+    }
+
+    .topnav a {
+        display: none;
+        padding: 16px 12px;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .offer-section {
+        grid-template-columns: 1fr;
+    }
+
+    .show-off {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        float: none;
+        background-color: #212121;
+        box-shadow: 2px 5px 10px black;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        padding: 16px 12px;
+        text-align: center;
     }
 }

@@ -5,22 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RCC</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/9cfc40fa5c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="slider">
-            <nav>
+            <nav class="topnav" id="myTopnav">
                 <a href="index.html">Home</a>
-                <a>Equipment</a>
-                <a>Furniture</a>
-                <a>Reviews</a>
+                <a href="equipments.html">Equipment</a>
+                <a href="">Furniture</a>
+                <a href="reviews.html">Reviews</a>
                 <a>Basket</a>
-                <a>Offers</a>
+                <a href="offers.html">Offers</a>
                 <a>Contact Us</a>
                 <a>About Us</a>
+                <a href="#ads-popup-container">Test popup</a>
+                <a href="javascript:void(0);" class="icon" onclick="onMenuClicked()">
+                    <i id="nav-icon" class="fa-solid fa-bars"></i>
+                </a>
             </nav>
             <figure>
                 <div class="slide"><img src="images/slider-one.jpg"></div>
@@ -30,58 +35,139 @@
                 <div class="slide"><img src="images/slider-one.jpg"></div>
             </figure>
             <div class="overlay"></div>
-            <p>Sate ma soe pr nae</p>
+            <div class="home-text">
+                <p class="title">Cabin In The Woods<br>But In A Good Way!</p>
+                <p class="content">Enjoy camping anywhere and aytime with our best equiments.</p>
+            </div>
         </div>
-        
+        <div class="show-off">
+            <div><span class="show-off-value">10</span><br>Years of<br>Experience</div>
+            <div><span class="show-off-value">1K+</span><br>Camping<br>Destination</div>
+            <div><span class="show-off-value">8K</span><br>Happy<br>Customer</div>
+            <div><span class="show-off-value">4.2</span><br>Overall<br>Rating</div>
+        </div>
     </header>
-    <main>
-        <article></article>
-        <section style="display: grid; padding: 20px;column-gap: 20px; grid-template-columns: 1fr 1fr;">
-            <img src="images/slider-one.jpg" style="height: 300px; width: 100%;">
-            <p style="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, ullam eaque. Voluptate, veritatis voluptas natus dicta, nihil architecto earum eum minima consectetur enim ex illo in nam sequi inventore fugiat?</p>
+    <div id="ads-popup-container" class="ads-overlay">
+        <div class="ads-popup">
+            <h2>First time discount!</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>15% OFF</p>
+                <p>your first order</p>
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com"><br>
+                <button>UNLOCK 15% OFF</button>
+                <span>Decline Offer</span>
+                <p>**Exclusions apply. Does not apply to sale items & cannot be combined with other promos.</p>
+            </div>
+        </div>
+    </div>
+    <main class="grid-container-3">
+        <section class="top-brand-section">
+            <h1>Top Brands</h1>
+            <div class="top-brand-container">
+                <img class="top-brand-item" src="images/brands/exped-bc-circle-small.webp">
+                <img class="top-brand-item" src="images/brands/arcteryx-bc-circle-small.webp">
+                <img class="top-brand-item" src="images/brands/lasportiva-bc-circle-small.webp">
+                <img class="top-brand-item" src="images/brands/patagonia-bc-circle-small.png">
+                <img class="top-brand-item" src="images/brands/petzl-bc-circle-small.png">
+            </div>
         </section>
-        <section style="display: grid; padding: 20px;column-gap: 20px; grid-template-columns: 1fr 1fr;">
-            <p style="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, ullam eaque. Voluptate, veritatis voluptas natus dicta, nihil architecto earum eum minima consectetur enim ex illo in nam sequi inventore fugiat?</p>
-            <img src="images/slider-one.jpg" style="height: 300px; width: 100%;">
+        <section class="top-brand-section">
+            <h1>Our Top Picks</h1>
+            <div class="top-brand-container">
+                <img class="top-brand-item" src="images/top-picks/202207PuffyHoneyBrownTacoTan_720x-white__62671.jpg">
+                <img class="top-brand-item" src="images/top-picks/202207PuffyHoneyBrownTacoTan_720x-white__62671.jpg">
+                <img class="top-brand-item" src="images/top-picks/202207PuffyHoneyBrownTacoTan_720x-white__62671.jpg">
+                <img class="top-brand-item" src="images/top-picks/202207PuffyHoneyBrownTacoTan_720x-white__62671.jpg">
+                <img class="top-brand-item" src="images/top-picks/202207PuffyHoneyBrownTacoTan_720x-white__62671.jpg">
+            </div>
         </section>
-        <section style="height: 300px; background-color: blue;"></section>
-        <section style="height: 300px; background-color: blueviolet;"></section>
-        <section style="height: 300px; background-color: brown;"></section>
+        <section class="equiment-section">
+            <div class="equiment-section-container">
+                <h1>Camping Equiments</h1>
+                <p>Shop Best Selling & Staff Favorite Ideas</p>
+                <button class="animated-border-button">SHOP NOW</button>
+            </div>
+        </section>
+        <section class="top-brand-section">
+            <h1>Shop top camp & hike brands</h1>
+            <div class="top-brand-container">
+                <div class="top-brand-item"><img src="images/brands/rei-co-op.svg"></div>
+                <div class="top-brand-item"><img src="images/brands/osprey.svg"></div>
+                <div class="top-brand-item"><img src="images/brands/salomon.svg"></div>
+                <div class="top-brand-item"><img src="images/brands/danner.svg"></div>
+                <div class="top-brand-item"><img src="images/brands/nemo.svg"></div>
+                <div class="top-brand-item"><img src="images/brands/yeti.svg"></div>
+                <div class="top-brand-item"><img src="images/brands/the-north-face.svg"></div>
+                <div class="top-brand-item"><img src="images/brands/dometic.svg"></div>
+            </div>
+        </section>
+        <section class="top-brand-section">
+            <iframe class="video" src="https://www.youtube-nocookie.com/embed/lZsfQ1EdEjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="top-brand-section">
+            <h1>Camping & Hiking Gear</h1>
+            <div class="top-brand-container">
+                <img class="top-brand-item-two" src="images/gear/backpack.jfif">
+                <img class="top-brand-item-two" src="images/gear/tent.jfif">
+                <img class="top-brand-item-two" src="images/gear/sleeping-bag.jfif">
+                <img class="top-brand-item-two" src="images/gear/hammock.jfif">
+                <img class="top-brand-item-two" src="images/gear/camp-kitchen.jfif">
+            </div>
+        </section>
+        <section class="top-brand-section">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.34423957643!2d96.13362136091719!3d16.809270202581764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb46206c0001%3A0x62648e1d66474021!2sKMD%20Institute!5e0!3m2!1sen!2smm!4v1672136439916!5m2!1sen!2smm" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="home-section">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, ullam eaque. Voluptate, veritatis voluptas
+                natus dicta, nihil architecto earum eum minima consectetur enim ex illo in nam sequi inventore fugiat?
+            </p>
+            <di class="hover-rotate"><img src="images/slider-one.jpg"></di>
+        </section>
+        <section class="home-section">
+            <img src="images/slider-one.jpg">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, ullam eaque. Voluptate, veritatis voluptas
+                natus dicta, nihil architecto earum eum minima consectetur enim ex illo in nam sequi inventore fugiat?
+            </p>
+        </section>
     </main>
     <footer>
         <div>
             <h6 class="footer-category">CATEGORIES</h6>
             <div>
-                <p>Camp and Hike</p>
-                <p>Climbing</p>
-                <p>One</p>
+                <p class="footer-category-item">Camp and Hike</p>
+                <p class="footer-category-item">Climbing</p>
+                <p class="footer-category-item">One</p>
             </div>
         </div>
         <div>
             <h6 class="footer-category">COMPANY</h6>
             <div>
-                <p>One</p>
-                <p>One</p>
-                <p>One</p>
+                <p class="footer-category-item">One</p>
+                <p class="footer-category-item">One</p>
+                <p class="footer-category-item">One</p>
             </div>
         </div>
         <div>
             <h6 class="footer-category">SUPPORT</h6>
             <div>
-                <p>One</p>
-                <p>One</p>
-                <p>One</p>
+                <p class="footer-category-item">One</p>
+                <p class="footer-category-item">One</p>
+                <p class="footer-category-item">One</p>
             </div>
         </div>
         <div>
             <h6 class="footer-category">CONTACT</h6>
             <div>
-                <p>Email Us</p>
-                <p>Live Chat</p>
-                <p>One</p>
+                <p class="footer-category-item">Email Us</p>
+                <p class="footer-category-item">Live Chat</p>
+                <p class="footer-category-item">One</p>
             </div>
         </div>
     </footer>
 </body>
+
+<script src="scripts/script.js"></script>
 
 </html>
