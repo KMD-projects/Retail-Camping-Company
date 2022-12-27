@@ -53,11 +53,17 @@ body {
     font-family: 'Courier New', monospace;
     font-size: 60px;
     color: white;
+    margin: 0;
 }
 
 .home-text .content {
     font-size: 20px;
     color: silver;
+    margin: 10px;
+}
+
+.home-text button {
+    margin-top: 20px;
 }
 
 figure {
@@ -196,7 +202,8 @@ figure {
     color: white;
 }
 
-.top-brand-section .map,.video {
+.top-brand-section .map,
+.video {
     margin-top: 40px;
     border: 0;
     width: 100%;
@@ -409,6 +416,111 @@ footer {
     color: darkgreen;
 }
 
+.review-section {
+    grid-column: 2 / 3;
+    position: relative;
+    display: grid;
+    padding: 20px;
+    column-gap: 20px;
+    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.review-section-title {
+    grid-column: 2 / 3;
+    text-align: center;
+    padding: 0;
+}
+
+.quote {
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.quote::before {
+    content: '"';
+}
+
+.quote::after {
+    content: '"';
+}
+
+
+.review-section .item {
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.141);
+}
+
+.review-section .item .content {
+    padding: 20px;
+}
+
+.review-content {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.review-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review-profile {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.review-profile div h3 {
+    margin: 0;
+}
+
+.review-name {
+    margin-top: 30px;
+}
+
+.review-name h5 {
+    color: gray;
+    font-weight: lighter;
+    margin: 4px 0px;
+}
+
+.review-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.review-gallery img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.rating-star {
+    color: #3D5AFE;
+}
+
+.rating {
+    margin-top: 20px;
+}
+
+.rounded-border-button {
+    background-color: transparent;
+    border-color: wheat;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 12px 40px 10px;
+}
+
+.rounded-border-button:hover {
+    background-color: wheat;
+    color: black;
+}
 
 /* animated border */
 .animated-border-button {
@@ -418,34 +530,34 @@ footer {
     outline: none;
     padding: 12px 40px 10px;
     position: relative;
-  }
-  
-  .animated-border-button::before,
-  .animated-border-button::after {
+}
+
+.animated-border-button::before,
+.animated-border-button::after {
     border: 0 solid transparent;
     transition: all 0.3s;
     content: '';
     height: 0;
     position: absolute;
     width: 24px;
-  }
-  
-  .animated-border-button::before {
+}
+
+.animated-border-button::before {
     border-top: 2px solid white;
     right: 0;
     top: -4px;
-  }
-  
-  .animated-border-button::after {
+}
+
+.animated-border-button::after {
     border-bottom: 2px solid white;
     bottom: -4px;
     left: 0;
-  }
-  
-  .animated-border-button:hover::before,
-  .animated-border-button:hover::after {
+}
+
+.animated-border-button:hover::before,
+.animated-border-button:hover::after {
     width: 100%;
-  }
+}
 
 
 
@@ -454,7 +566,7 @@ footer {
 
 
 
-  @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .box {
         width: 70%;
     }
@@ -507,6 +619,10 @@ footer {
         display: grid;
         grid-template-columns: auto auto;
         row-gap: 40px;
+    }
+
+    .review-section {
+        grid-template-columns: 1fr;
     }
 }
 
