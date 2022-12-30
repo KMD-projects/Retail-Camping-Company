@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCC</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="https://kit.fontawesome.com/9cfc40fa5c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,13 +15,10 @@
             <nav class="topnav" id="myTopnav">
                 <a href="index.html">Home</a>
                 <a href="equipments.html">Equipment</a>
-                <a href="">Furniture</a>
+                <a href="furniture.html">Furniture</a>
                 <a href="reviews.html">Reviews</a>
-                <a>Basket</a>
+                <a href="basket.html">Basket</a>
                 <a href="offers.html">Offers</a>
-                <a>Contact Us</a>
-                <a>About Us</a>
-                <a href="#ads-popup-container">Test popup</a>
                 <a href="javascript:void(0);" class="icon" onclick="onMenuClicked()">
                     <i id="nav-icon" class="fa-solid fa-bars"></i>
                 </a>
@@ -37,7 +33,7 @@
             <div class="overlay"></div>
             <div class="home-text">
                 <p class="title">Cabin In The Woods<br>But In A Good Way!</p>
-                <p class="content">Enjoy camping anywhere and aytime with our best equiments.</p>
+                <p class="content">Enjoy camping anywhere and anytime with our best equiments.</p>
                 <button class="rounded-border-button">Browse</button>
             </div>
         </div>
@@ -48,19 +44,22 @@
             <div><span class="show-off-value">4.2</span><br>Overall<br>Rating</div>
         </div>
     </header>
-    <div id="ads-popup-container" class="ads-overlay">
-        <div class="ads-popup">
+    <div>
+        <input type="checkbox" id="close_ads"></input>
+        <div id="ads_popup">
             <h2>First time discount!</h2>
-            <a class="close" href="#">&times;</a>
             <div class="content">
-                <p>15% OFF</p>
-                <p>your first order</p>
+                <p class="price">15% OFF</p>
                 <label for="email">Enter your email:</label><br>
                 <input type="email" id="email" name="email" placeholder="example@gmail.com"><br>
-                <button>UNLOCK 15% OFF</button>
-                <span>Decline Offer</span>
-                <p>**Exclusions apply. Does not apply to sale items & cannot be combined with other promos.</p>
+                <button class="animated-border-button">UNLOCK 15% OFF</button><br>
+                <label for="close_ads" id="ok_cookie_box">Decline Offer</label>
+                <p id="ads-note">**Exclusions apply. Does not apply to sale items & cannot be combined with other
+                    promos.</p>
             </div>
+            <label for="close_ads" id="close_cookie_box">
+                <i class="material-icons">close</i>
+            </label>
         </div>
     </div>
     <main class="grid-container-3">
@@ -105,7 +104,10 @@
             </div>
         </section>
         <section class="top-brand-section">
-            <iframe class="video" src="https://www.youtube-nocookie.com/embed/lZsfQ1EdEjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video" src="https://www.youtube-nocookie.com/embed/lZsfQ1EdEjM" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </section>
         <section class="top-brand-section">
             <h1>Camping & Hiking Gear</h1>
@@ -118,53 +120,69 @@
             </div>
         </section>
         <section class="top-brand-section">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.34423957643!2d96.13362136091719!3d16.809270202581764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb46206c0001%3A0x62648e1d66474021!2sKMD%20Institute!5e0!3m2!1sen!2smm!4v1672136439916!5m2!1sen!2smm" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <section class="home-section">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, ullam eaque. Voluptate, veritatis voluptas
-                natus dicta, nihil architecto earum eum minima consectetur enim ex illo in nam sequi inventore fugiat?
-            </p>
-            <di class="hover-rotate"><img src="images/slider-one.jpg"></di>
-        </section>
-        <section class="home-section">
-            <img src="images/slider-one.jpg">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, ullam eaque. Voluptate, veritatis voluptas
-                natus dicta, nihil architecto earum eum minima consectetur enim ex illo in nam sequi inventore fugiat?
-            </p>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.34423957643!2d96.13362136091719!3d16.809270202581764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb46206c0001%3A0x62648e1d66474021!2sKMD%20Institute!5e0!3m2!1sen!2smm!4v1672136439916!5m2!1sen!2smm"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
-    <footer>
-        <div>
-            <h6 class="footer-category">CATEGORIES</h6>
+    <footer class="grid-container-3">
+        <div class="container">
             <div>
-                <p class="footer-category-item">Camp and Hike</p>
-                <p class="footer-category-item">Climbing</p>
-                <p class="footer-category-item">One</p>
+                <h6 class="footer-category">Information</h6>
+                <div>
+                    <a href="" class="footer-category-item hover-underline-animation">Camp and Hike</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Climbing</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Travel</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Men</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Women</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Footwear</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Brands</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Sale</a><br>
+                </div>
+            </div>
+            <div>
+                <h6 class="footer-category">Company</h6>
+                <div>
+                    <a href="" class="footer-category-item hover-underline-animation">About</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Blog</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Retail Store</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Events</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Promos</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">International</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Gift Certificates</a><br>
+                </div>
+            </div>
+            <div>
+                <h6 class="footer-category">Support</h6>
+                <div>
+                    <a href="" class="footer-category-item hover-underline-animation">My Account</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Order Status</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Shipping</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Returns</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Payment Methods</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">FAQs</a><br>
+                </div>
+            </div>
+            <div>
+                <h6 class="footer-category">Contact</h6>
+                <div>
+                    <a href="mailto:contact@rcc.com" target="_blank" class="footer-category-item hover-underline-animation">Email Us</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Live Chat</a><br>
+                    <a href="tel:+8006001234" class="footer-category-item hover-underline-animation">800-600-1234</a><br>
+                </div>
+            </div>
+            <div>
+                <h6 class="footer-category">Social</h6>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank" class="footer-category-item hover-underline-animation">Facebook</a><br>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-category-item hover-underline-animation">Instagram</a><br>
+                    <a href="https://twitter.com/" target="_blank" class="footer-category-item hover-underline-animation">Twitter</a><br>
+                </div>
             </div>
         </div>
-        <div>
-            <h6 class="footer-category">COMPANY</h6>
-            <div>
-                <p class="footer-category-item">One</p>
-                <p class="footer-category-item">One</p>
-                <p class="footer-category-item">One</p>
-            </div>
-        </div>
-        <div>
-            <h6 class="footer-category">SUPPORT</h6>
-            <div>
-                <p class="footer-category-item">One</p>
-                <p class="footer-category-item">One</p>
-                <p class="footer-category-item">One</p>
-            </div>
-        </div>
-        <div>
-            <h6 class="footer-category">CONTACT</h6>
-            <div>
-                <p class="footer-category-item">Email Us</p>
-                <p class="footer-category-item">Live Chat</p>
-                <p class="footer-category-item">One</p>
-            </div>
+        <div class="notice">
+            <p>&copy; Copyright 2022, Retail Camping Company</p>
+            <p>This website is for educational purpose only.</p>
         </div>
     </footer>
 </body>

@@ -7,222 +7,416 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="equipments.html">Equipment</a>
+            <a href="furniture.html">Furniture</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="basket.html">Basket</a>
+            <a href="offers.html">Offers</a>
+            <a href="javascript:void(0);" class="icon" onclick="onMenuClicked()">
+                <i id="nav-icon" class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+        <div class="page-header">
+            <h1>Reviews</h1>
+        </div>
+    </header>
     <main class="grid-container-3">
-        <h1 class="review-section-title">Customer reviews</h2>
         <section class="review-section">
-            <div class="item">
-                <!-- <img class="top-brand-item" src="images/deal-1.jpg"> -->
-                <div class="content">
-                    <div class="review-profile">
-                        <img class="review-avatar" src="images/sample-avatar.jpg">
-                        <div class="review-name">
-                            <h3>Christopher Nolan</h3>
-                            <h5>Reviewed Mar 5, 2022</h5><br>
+            <div class="review-list">
+                <div class="item">
+                    <div class="content">
+                        <div class="review-profile">
+                            <img class="review-avatar" src="images/sample-avatar.jpg">
+                            <div class="review-name">
+                                <h3>Christopher Nolan</h3>
+                                <h5>Reviewed Mar 5, 2022</h5><br>
+                            </div>
+                        </div>
+
+                        <p class="quote">Winter Camping Review of Mammoth Campground</p><br>
+                        <div class="rating">
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star.png" />
+                        </div>
+                        <p class="review-content">I stayed at Mammoth campground during a winter visit of Yellowstone
+                            mid
+                            March of this year. his is the only campground open in Yellowstone during the winter season.
+                            Mammoth is a first-come, first-serve campground with a cost is$20 a night, cost is the same
+                            during the summer season. The campground can still fill up on the weekends, this is because
+                            only
+                            the first loop is open during the winter season cutting your campsite availability down
+                            quite a
+                            bit. The campground has paved roads with gravel parking pads. Sites have platforms for the
+                            tents. Dumpsters and recycling is available at the entrance. The campground has only one
+                            restroom open in the winter at the entrance. Each site has its own bear proof food locker,
+                            as
+                            well as a picnic table and metal fire ring. While the campground and Mammoth area had little
+                            snow on my March visit you could still be camping on snow easily in March, as heavy snows
+                            can
+                            happen at any time. Visited the area 6 weeks later and it had much more snow, so be prepared
+                            to
+                            camp in snow as late at May.</p>
+                        <div class="review-gallery">
+                            <img src="images/review/review-one.jpg">
+                            <img src="images/review/review-two.jpg">
+                            <img src="images/review/review-three.jpg">
+                            <img src="images/review/review-four.jpg">
+                            <img src="images/review/review-five.jpg">
+                            <img src="images/review/review-six.jpg">
+                            <img src="images/review/review-11.jpg">
+                            <img src="images/review/review-12.jpg">
+                            <img src="images/review/review13.jpg">
+                            <img src="images/review/review-14.jpg">
                         </div>
                     </div>
-                    
-                    <p class="quote">Winter Camping Review of Mammoth Campground</p>
-                    <div class="rating">
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                    </div>
-                    <p class="review-content">I stayed at Mammoth campground during a winter visit of Yellowstone mid March of this year. his is the only campground open in Yellowstone during the winter season.  Mammoth is a first-come, first-serve campground with a cost is$20 a night, cost is the same during the summer season. The campground can still fill up on the weekends, this is because only the first loop is open during the winter season cutting your campsite availability down quite a bit. The campground has paved roads with gravel parking pads. Sites have platforms for the tents. Dumpsters and recycling is available at the entrance. The campground has only one restroom open in the winter at the entrance. Each site has its own bear proof food locker, as well as a picnic table and metal fire ring. While the campground and Mammoth area had little snow on my March visit you could still be camping on snow easily in March, as heavy snows can happen at any time.  Visited the area 6 weeks later and it had much more snow, so be prepared to camp in snow as late at May.</p>
-                    <div class="review-gallery">
-                        <img src="images/review/review-one.jpg">
-                        <img src="images/review/review-two.jpg">
-                        <img src="images/review/review-three.jpg">
-                        <img src="images/review/review-four.jpg">
-                        <img src="images/review/review-five.jpg">
-                        <img src="images/review/review-six.jpg">
-                        <img src="images/review/review-11.jpg">
-                        <img src="images/review/review-12.jpg">
-                        <img src="images/review/review13.jpg">
-                        <img src="images/review/review-14.jpg">
-                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <!-- <img class="top-brand-item" src="images/deal-1.jpg"> -->
-                <div class="content">
-                    <div class="review-profile">
-                        <img class="review-avatar" src="images/sample-avatar.jpg">
-                        <div class="review-name">
-                            <h3>Christopher Nolan</h3>
-                            <h5>Reviewed Mar 5, 2022</h5><br>
+                <div class="item">
+                    <div class="content">
+                        <div class="review-profile">
+                            <img class="review-avatar" src="images/sample-avatar.jpg">
+                            <div class="review-name">
+                                <h3>Christopher Nolan</h3>
+                                <h5>Reviewed Mar 5, 2022</h5><br>
+                            </div>
+                        </div>
+
+                        <p class="quote">Winter Camping Review of Mammoth Campground</p><br>
+                        <div class="rating">
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star.png" />
+                        </div>
+                        <p class="review-content">I stayed at Mammoth campground during a winter visit of Yellowstone
+                            mid
+                            March of this year. his is the only campground open in Yellowstone during the winter season.
+                            Mammoth is a first-come, first-serve campground with a cost is$20 a night, cost is the same
+                            during the summer season. The campground can still fill up on the weekends, this is because
+                            only
+                            the first loop is open during the winter season cutting your campsite availability down
+                            quite a
+                            bit. The campground has paved roads with gravel parking pads. Sites have platforms for the
+                            tents. Dumpsters and recycling is available at the entrance. The campground has only one
+                            restroom open in the winter at the entrance. Each site has its own bear proof food locker,
+                            as
+                            well as a picnic table and metal fire ring. While the campground and Mammoth area had little
+                            snow on my March visit you could still be camping on snow easily in March, as heavy snows
+                            can
+                            happen at any time. Visited the area 6 weeks later and it had much more snow, so be prepared
+                            to
+                            camp in snow as late at May.</p>
+                        <div class="review-gallery">
+                            <img src="images/review/review-one.jpg">
+                            <img src="images/review/review-two.jpg">
+                            <img src="images/review/review-three.jpg">
+                            <img src="images/review/review-four.jpg">
+                            <img src="images/review/review-five.jpg">
+                            <img src="images/review/review-six.jpg">
+                            <img src="images/review/review-11.jpg">
+                            <img src="images/review/review-12.jpg">
+                            <img src="images/review/review13.jpg">
+                            <img src="images/review/review-14.jpg">
                         </div>
                     </div>
-                    
-                    <p class="quote">Winter Camping Review of Mammoth Campground</p>
-                    <div class="rating">
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                    </div>
-                    <p class="review-content">I stayed at Mammoth campground during a winter visit of Yellowstone mid March of this year. his is the only campground open in Yellowstone during the winter season.  Mammoth is a first-come, first-serve campground with a cost is$20 a night, cost is the same during the summer season. The campground can still fill up on the weekends, this is because only the first loop is open during the winter season cutting your campsite availability down quite a bit. The campground has paved roads with gravel parking pads. Sites have platforms for the tents. Dumpsters and recycling is available at the entrance. The campground has only one restroom open in the winter at the entrance. Each site has its own bear proof food locker, as well as a picnic table and metal fire ring. While the campground and Mammoth area had little snow on my March visit you could still be camping on snow easily in March, as heavy snows can happen at any time.  Visited the area 6 weeks later and it had much more snow, so be prepared to camp in snow as late at May.</p>
-                    <div class="review-gallery">
-                        <img src="images/review/review-one.jpg">
-                        <img src="images/review/review-two.jpg">
-                        <img src="images/review/review-three.jpg">
-                        <img src="images/review/review-four.jpg">
-                        <img src="images/review/review-five.jpg">
-                        <img src="images/review/review-six.jpg">
-                        <img src="images/review/review-11.jpg">
-                        <img src="images/review/review-12.jpg">
-                        <img src="images/review/review13.jpg">
-                        <img src="images/review/review-14.jpg">
-                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <!-- <img class="top-brand-item" src="images/deal-1.jpg"> -->
-                <div class="content">
-                    <div class="review-profile">
-                        <img class="review-avatar" src="images/sample-avatar.jpg">
-                        <div class="review-name">
-                            <h3>Christopher Nolan</h3>
-                            <h5>Reviewed Mar 5, 2022</h5><br>
+                <div class="item">
+                    <!-- <img class="top-brand-item" src="images/deal-1.jpg"> -->
+                    <div class="content">
+                        <div class="review-profile">
+                            <img class="review-avatar" src="images/sample-avatar.jpg">
+                            <div class="review-name">
+                                <h3>Christopher Nolan</h3>
+                                <h5>Reviewed Mar 5, 2022</h5><br>
+                            </div>
+                        </div>
+
+                        <p class="quote">Winter Camping Review of Mammoth Campground</p><br>
+                        <div class="rating">
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star.png" />
+                        </div>
+                        <p class="review-content">I stayed at Mammoth campground during a winter visit of Yellowstone
+                            mid
+                            March of this year. his is the only campground open in Yellowstone during the winter season.
+                            Mammoth is a first-come, first-serve campground with a cost is$20 a night, cost is the same
+                            during the summer season. The campground can still fill up on the weekends, this is because
+                            only
+                            the first loop is open during the winter season cutting your campsite availability down
+                            quite a
+                            bit. The campground has paved roads with gravel parking pads. Sites have platforms for the
+                            tents. Dumpsters and recycling is available at the entrance. The campground has only one
+                            restroom open in the winter at the entrance. Each site has its own bear proof food locker,
+                            as
+                            well as a picnic table and metal fire ring. While the campground and Mammoth area had little
+                            snow on my March visit you could still be camping on snow easily in March, as heavy snows
+                            can
+                            happen at any time. Visited the area 6 weeks later and it had much more snow, so be prepared
+                            to
+                            camp in snow as late at May.</p>
+                        <div class="review-gallery">
+                            <img src="images/review/review-one.jpg">
+                            <img src="images/review/review-two.jpg">
+                            <img src="images/review/review-three.jpg">
+                            <img src="images/review/review-four.jpg">
+                            <img src="images/review/review-five.jpg">
+                            <img src="images/review/review-six.jpg">
+                            <img src="images/review/review-11.jpg">
+                            <img src="images/review/review-12.jpg">
+                            <img src="images/review/review13.jpg">
+                            <img src="images/review/review-14.jpg">
                         </div>
                     </div>
-                    
-                    <p class="quote">Winter Camping Review of Mammoth Campground</p>
-                    <div class="rating">
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                    </div>
-                    <p class="review-content">I stayed at Mammoth campground during a winter visit of Yellowstone mid March of this year. his is the only campground open in Yellowstone during the winter season.  Mammoth is a first-come, first-serve campground with a cost is$20 a night, cost is the same during the summer season. The campground can still fill up on the weekends, this is because only the first loop is open during the winter season cutting your campsite availability down quite a bit. The campground has paved roads with gravel parking pads. Sites have platforms for the tents. Dumpsters and recycling is available at the entrance. The campground has only one restroom open in the winter at the entrance. Each site has its own bear proof food locker, as well as a picnic table and metal fire ring. While the campground and Mammoth area had little snow on my March visit you could still be camping on snow easily in March, as heavy snows can happen at any time.  Visited the area 6 weeks later and it had much more snow, so be prepared to camp in snow as late at May.</p>
-                    <div class="review-gallery">
-                        <img src="images/review/review-one.jpg">
-                        <img src="images/review/review-two.jpg">
-                        <img src="images/review/review-three.jpg">
-                        <img src="images/review/review-four.jpg">
-                        <img src="images/review/review-five.jpg">
-                        <img src="images/review/review-six.jpg">
-                        <img src="images/review/review-11.jpg">
-                        <img src="images/review/review-12.jpg">
-                        <img src="images/review/review13.jpg">
-                        <img src="images/review/review-14.jpg">
-                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <!-- <img class="top-brand-item" src="images/deal-1.jpg"> -->
-                <div class="content">
-                    <div class="review-profile">
-                        <img class="review-avatar" src="images/sample-avatar.jpg">
-                        <div class="review-name">
-                            <h3>Christopher Nolan</h3>
-                            <h5>Reviewed Mar 5, 2022</h5><br>
+                <div class="item">
+                    <!-- <img class="top-brand-item" src="images/deal-1.jpg"> -->
+                    <div class="content">
+                        <div class="review-profile">
+                            <img class="review-avatar" src="images/sample-avatar.jpg">
+                            <div class="review-name">
+                                <h3>Christopher Nolan</h3>
+                                <h5>Reviewed Mar 5, 2022</h5><br>
+                            </div>
+                        </div>
+
+                        <p class="quote">Winter Camping Review of Mammoth Campground</p><br>
+                        <div class="rating">
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star.png" />
+                        </div>
+                        <p class="review-content">I stayed at Mammoth campground during a winter visit of Yellowstone
+                            mid
+                            March of this year. his is the only campground open in Yellowstone during the winter season.
+                            Mammoth is a first-come, first-serve campground with a cost is$20 a night, cost is the same
+                            during the summer season. The campground can still fill up on the weekends, this is because
+                            only
+                            the first loop is open during the winter season cutting your campsite availability down
+                            quite a
+                            bit. The campground has paved roads with gravel parking pads. Sites have platforms for the
+                            tents. Dumpsters and recycling is available at the entrance. The campground has only one
+                            restroom open in the winter at the entrance. Each site has its own bear proof food locker,
+                            as
+                            well as a picnic table and metal fire ring. While the campground and Mammoth area had little
+                            snow on my March visit you could still be camping on snow easily in March, as heavy snows
+                            can
+                            happen at any time. Visited the area 6 weeks later and it had much more snow, so be prepared
+                            to
+                            camp in snow as late at May.</p>
+                        <div class="review-gallery">
+                            <img src="images/review/review-one.jpg">
+                            <img src="images/review/review-two.jpg">
+                            <img src="images/review/review-three.jpg">
+                            <img src="images/review/review-four.jpg">
+                            <img src="images/review/review-five.jpg">
+                            <img src="images/review/review-six.jpg">
+                            <img src="images/review/review-11.jpg">
+                            <img src="images/review/review-12.jpg">
+                            <img src="images/review/review13.jpg">
+                            <img src="images/review/review-14.jpg">
                         </div>
                     </div>
-                    
-                    <p class="quote">Winter Camping Review of Mammoth Campground</p>
-                    <div class="rating">
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                    </div>
-                    <p class="review-content">I stayed at Mammoth campground during a winter visit of Yellowstone mid March of this year. his is the only campground open in Yellowstone during the winter season.  Mammoth is a first-come, first-serve campground with a cost is$20 a night, cost is the same during the summer season. The campground can still fill up on the weekends, this is because only the first loop is open during the winter season cutting your campsite availability down quite a bit. The campground has paved roads with gravel parking pads. Sites have platforms for the tents. Dumpsters and recycling is available at the entrance. The campground has only one restroom open in the winter at the entrance. Each site has its own bear proof food locker, as well as a picnic table and metal fire ring. While the campground and Mammoth area had little snow on my March visit you could still be camping on snow easily in March, as heavy snows can happen at any time.  Visited the area 6 weeks later and it had much more snow, so be prepared to camp in snow as late at May.</p>
-                    <div class="review-gallery">
-                        <img src="images/review/review-one.jpg">
-                        <img src="images/review/review-two.jpg">
-                        <img src="images/review/review-three.jpg">
-                        <img src="images/review/review-four.jpg">
-                        <img src="images/review/review-five.jpg">
-                        <img src="images/review/review-six.jpg">
-                        <img src="images/review/review-11.jpg">
-                        <img src="images/review/review-12.jpg">
-                        <img src="images/review/review13.jpg">
-                        <img src="images/review/review-14.jpg">
-                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <!-- <img class="top-brand-item" src="images/deal-1.jpg"> -->
-                <div class="content">
-                    <div class="review-profile">
-                        <img class="review-avatar" src="images/sample-avatar.jpg">
-                        <div class="review-name">
-                            <h3>Christopher Nolan</h3>
-                            <h5>Reviewed Mar 5, 2022</h5><br>
+                <div class="item">
+                    <!-- <img class="top-brand-item" src="images/deal-1.jpg"> -->
+                    <div class="content">
+                        <div class="review-profile">
+                            <img class="review-avatar" src="images/sample-avatar.jpg">
+                            <div class="review-name">
+                                <h3>Christopher Nolan</h3>
+                                <h5>Reviewed Mar 5, 2022</h5><br>
+                            </div>
+                        </div>
+
+                        <p class="quote">Winter Camping Review of Mammoth Campground</p><br>
+                        <div class="rating">
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star.png" />
+                        </div>
+                        <p class="review-content">I stayed at Mammoth campground during a winter visit of Yellowstone
+                            mid
+                            March of this year. his is the only campground open in Yellowstone during the winter season.
+                            Mammoth is a first-come, first-serve campground with a cost is$20 a night, cost is the same
+                            during the summer season. The campground can still fill up on the weekends, this is because
+                            only
+                            the first loop is open during the winter season cutting your campsite availability down
+                            quite a
+                            bit. The campground has paved roads with gravel parking pads. Sites have platforms for the
+                            tents. Dumpsters and recycling is available at the entrance. The campground has only one
+                            restroom open in the winter at the entrance. Each site has its own bear proof food locker,
+                            as
+                            well as a picnic table and metal fire ring. While the campground and Mammoth area had little
+                            snow on my March visit you could still be camping on snow easily in March, as heavy snows
+                            can
+                            happen at any time. Visited the area 6 weeks later and it had much more snow, so be prepared
+                            to
+                            camp in snow as late at May.</p>
+                        <div class="review-gallery">
+                            <img src="images/review/review-one.jpg">
+                            <img src="images/review/review-two.jpg">
+                            <img src="images/review/review-three.jpg">
+                            <img src="images/review/review-four.jpg">
+                            <img src="images/review/review-five.jpg">
+                            <img src="images/review/review-six.jpg">
+                            <img src="images/review/review-11.jpg">
+                            <img src="images/review/review-12.jpg">
+                            <img src="images/review/review13.jpg">
+                            <img src="images/review/review-14.jpg">
                         </div>
                     </div>
-                    
-                    <p class="quote">Winter Camping Review of Mammoth Campground</p>
-                    <div class="rating">
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                    </div>
-                    <p class="review-content">I stayed at Mammoth campground during a winter visit of Yellowstone mid March of this year. his is the only campground open in Yellowstone during the winter season.  Mammoth is a first-come, first-serve campground with a cost is$20 a night, cost is the same during the summer season. The campground can still fill up on the weekends, this is because only the first loop is open during the winter season cutting your campsite availability down quite a bit. The campground has paved roads with gravel parking pads. Sites have platforms for the tents. Dumpsters and recycling is available at the entrance. The campground has only one restroom open in the winter at the entrance. Each site has its own bear proof food locker, as well as a picnic table and metal fire ring. While the campground and Mammoth area had little snow on my March visit you could still be camping on snow easily in March, as heavy snows can happen at any time.  Visited the area 6 weeks later and it had much more snow, so be prepared to camp in snow as late at May.</p>
-                    <div class="review-gallery">
-                        <img src="images/review/review-one.jpg">
-                        <img src="images/review/review-two.jpg">
-                        <img src="images/review/review-three.jpg">
-                        <img src="images/review/review-four.jpg">
-                        <img src="images/review/review-five.jpg">
-                        <img src="images/review/review-six.jpg">
-                        <img src="images/review/review-11.jpg">
-                        <img src="images/review/review-12.jpg">
-                        <img src="images/review/review13.jpg">
-                        <img src="images/review/review-14.jpg">
-                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <!-- <img class="top-brand-item" src="images/deal-1.jpg"> -->
-                <div class="content">
-                    <div class="review-profile">
-                        <img class="review-avatar" src="images/sample-avatar.jpg">
-                        <div class="review-name">
-                            <h3>Christopher Nolan</h3>
-                            <h5>Reviewed Mar 5, 2022</h5><br>
+                <div class="item">
+                    <!-- <img class="top-brand-item" src="images/deal-1.jpg"> -->
+                    <div class="content">
+                        <div class="review-profile">
+                            <img class="review-avatar" src="images/sample-avatar.jpg">
+                            <div class="review-name">
+                                <h3>Christopher Nolan</h3>
+                                <h5>Reviewed Mar 5, 2022</h5><br>
+                            </div>
+                        </div>
+
+                        <p class="quote">Winter Camping Review of Mammoth Campground</p><br>
+                        <div class="rating">
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star-filled.png" />
+                            <img class="star" src="icons/star.png" />
+                        </div>
+                        <p class="review-content">I stayed at Mammoth campground during a winter visit of Yellowstone
+                            mid
+                            March of this year. his is the only campground open in Yellowstone during the winter season.
+                            Mammoth is a first-come, first-serve campground with a cost is$20 a night, cost is the same
+                            during the summer season. The campground can still fill up on the weekends, this is because
+                            only
+                            the first loop is open during the winter season cutting your campsite availability down
+                            quite a
+                            bit. The campground has paved roads with gravel parking pads. Sites have platforms for the
+                            tents. Dumpsters and recycling is available at the entrance. The campground has only one
+                            restroom open in the winter at the entrance. Each site has its own bear proof food locker,
+                            as
+                            well as a picnic table and metal fire ring. While the campground and Mammoth area had little
+                            snow on my March visit you could still be camping on snow easily in March, as heavy snows
+                            can
+                            happen at any time. Visited the area 6 weeks later and it had much more snow, so be prepared
+                            to
+                            camp in snow as late at May.</p>
+                        <div class="review-gallery">
+                            <img src="images/review/review-one.jpg">
+                            <img src="images/review/review-two.jpg">
+                            <img src="images/review/review-three.jpg">
+                            <img src="images/review/review-four.jpg">
+                            <img src="images/review/review-five.jpg">
+                            <img src="images/review/review-six.jpg">
+                            <img src="images/review/review-11.jpg">
+                            <img src="images/review/review-12.jpg">
+                            <img src="images/review/review13.jpg">
+                            <img src="images/review/review-14.jpg">
                         </div>
                     </div>
-                    
-                    <p class="quote">Winter Camping Review of Mammoth Campground</p>
-                    <div class="rating">
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                        <i class="material-icons rating-star">star</i>
-                    </div>
-                    <p class="review-content">I stayed at Mammoth campground during a winter visit of Yellowstone mid March of this year. his is the only campground open in Yellowstone during the winter season.  Mammoth is a first-come, first-serve campground with a cost is$20 a night, cost is the same during the summer season. The campground can still fill up on the weekends, this is because only the first loop is open during the winter season cutting your campsite availability down quite a bit. The campground has paved roads with gravel parking pads. Sites have platforms for the tents. Dumpsters and recycling is available at the entrance. The campground has only one restroom open in the winter at the entrance. Each site has its own bear proof food locker, as well as a picnic table and metal fire ring. While the campground and Mammoth area had little snow on my March visit you could still be camping on snow easily in March, as heavy snows can happen at any time.  Visited the area 6 weeks later and it had much more snow, so be prepared to camp in snow as late at May.</p>
-                    <div class="review-gallery">
-                        <img src="images/review/review-one.jpg">
-                        <img src="images/review/review-two.jpg">
-                        <img src="images/review/review-three.jpg">
-                        <img src="images/review/review-four.jpg">
-                        <img src="images/review/review-five.jpg">
-                        <img src="images/review/review-six.jpg">
-                        <img src="images/review/review-11.jpg">
-                        <img src="images/review/review-12.jpg">
-                        <img src="images/review/review13.jpg">
-                        <img src="images/review/review-14.jpg">
-                    </div>
+                </div>
+
+
+            </div>
+            <div class="write-review-section">
+                <div class="content">
+                    <h1>Write your own review</h1>
+                    <form>
+                        <label class="review-input-label" for="firstname">First name</label><br>
+                        <input type="text" id="fullname" class="styled-input" placeholder="First name" required><br><br>
+                        <label class="review-input-label" for="lastname">Last name</label><br>
+                        <input type="text" id="lastname" class="styled-input" placeholder="Last name" required><br><br>
+                        <label class="review-input-label" for="email">Email address</label><br>
+                        <input type="email" id="email" class="styled-input" placeholder="Email" required><br><br>
+                        <label class="review-input-label" for="subject">Subject</label><br>
+                        <input type="text" id="subject" class="styled-input" placeholder="Subject" required><br><br>
+                        <label class="review-input-label" for="message">Review</label><br>
+                        <textarea id="message" placeholder="Type your review" class="styled-textarea"
+                            required></textarea><br><br>
+                        <button type="submit" class="animated-border-button">Send</button>
+                    </form>
                 </div>
             </div>
-            
-            
         </section>
     </main>
+    <footer class="grid-container-3">
+        <div class="container">
+            <div>
+                <h6 class="footer-category">Information</h6>
+                <div>
+                    <a href="" class="footer-category-item hover-underline-animation">Camp and Hike</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Climbing</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Travel</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Men</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Women</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Footwear</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Brands</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Sale</a><br>
+                </div>
+            </div>
+            <div>
+                <h6 class="footer-category">Company</h6>
+                <div>
+                    <a href="" class="footer-category-item hover-underline-animation">About</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Blog</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Retail Store</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Events</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Promos</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">International</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Gift Certificates</a><br>
+                </div>
+            </div>
+            <div>
+                <h6 class="footer-category">Support</h6>
+                <div>
+                    <a href="" class="footer-category-item hover-underline-animation">My Account</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Order Status</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Shipping</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Returns</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Payment Methods</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">FAQs</a><br>
+                </div>
+            </div>
+            <div>
+                <h6 class="footer-category">Contact</h6>
+                <div>
+                    <a href="mailto:contact@rcc.com" target="_blank" class="footer-category-item hover-underline-animation">Email Us</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Live Chat</a><br>
+                    <a href="tel:+8006001234" class="footer-category-item hover-underline-animation">800-600-1234</a><br>
+                </div>
+            </div>
+            <div>
+                <h6 class="footer-category">Social</h6>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank" class="footer-category-item hover-underline-animation">Facebook</a><br>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-category-item hover-underline-animation">Instagram</a><br>
+                    <a href="https://twitter.com/" target="_blank" class="footer-category-item hover-underline-animation">Twitter</a><br>
+                </div>
+            </div>
+        </div>
+        <div class="notice">
+            <p>&copy; Copyright 2022, Retail Camping Company</p>
+            <p>This website is for educational purpose only.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

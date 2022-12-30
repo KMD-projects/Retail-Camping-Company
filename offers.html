@@ -5,27 +5,151 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equiments</title>
+    <title>Offers</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <header class="offer-header">
-        <h1>Offers & package deals</h1>
-        <h2>FOR CAMPING & GLAMPING AT RCC</h2>
-        <p>Here you will find attractive package deals for a holiday, just how you like it. Whether it’s for a pitch,
-            the alpine lodges, the rooms or other hired accommodation – we have curated great-value packages for your
-            holiday with that extra special touch.</p>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="equipments.html">Equipment</a>
+            <a href="furniture.html">Furniture</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="basket.html">Basket</a>
+            <a href="offers.html">Offers</a>
+            <a href="javascript:void(0);" class="icon" onclick="onMenuClicked()">
+                <i id="nav-icon" class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+        <div class="page-header">
+            <div>
+                <h1>Offers</h1> 
+            </div>
+        </div>
     </header>
-    <main class="grid-container-3">
-        <h2 class="offer-section-title">Top deals for camping joy</h2>
+    <main class="offer-page">
+        <section class="grid-2-3">
+            <div class="offer-header">
+                <p>Popular Items</p>
+                <div class="search searchBox">
+                    <input class="searchInput" type="text" name="" placeholder="Search">
+                    <button class="searchButton" href="#">
+                        <img src="icons/ic_search.png" />
+                    </button>
+                </div>
+            </div>
+            <div class="popular-item-list products">
+                <div class="item">
+                    <img class="image" src="images/furnitures/chair-2.jpg">
+                    <p class="brand">Helinox</p>
+                    <p class="name">High-Back Seat Warmer Chair</p>
+                    <p class="description">A puffy seat warmer for your Beach Chair</p>
+                    <p><span class="price-small">$79</span></p>
+                    <div class="rating">
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                    </div><br>
+                    <button class="rounded-border-button-2">ADD TO CART</button>
+                </div>
+                <div class="item">
+                    <img class="image" src="images/furnitures/table-2.jpg">
+                    <p class="brand">Snow Peak</p>
+                    <p class="name">My Table</p>
+                    <p class="description">Stylish, durable, and compact bamboo table</p>
+                    <p><span class="price-small">$139</span></p>
+                    <div class="rating">
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                    </div><br>
+                    <button class="rounded-border-button-2">ADD TO CART</button>
+                </div>
+                <div class="item">
+                    <img class="image" src="images/furnitures/stool-3.jpg">
+                    <p class="brand">Helinox</p>
+                    <p class="name">Speed Stool</p>
+                    <p class="description">Helinox's lightest, most compact seat</p>
+                    <p><span class="price-small">$89</span></p>
+                    <div class="rating">
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                    </div><br>
+                    <button class="rounded-border-button-2">ADD TO CART</button>
+                </div>
+                <div class="item">
+                    <img class="image" src="images/furnitures/stool-3.jpg">
+                    <p class="brand">Helinox</p>
+                    <p class="name">Speed Stool</p>
+                    <p class="description">Helinox's lightest, most compact seat</p>
+                    <p><span class="price-small">$89</span></p>
+                    <div class="rating">
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                    </div><br>
+                    <button class="rounded-border-button-2">ADD TO CART</button>
+                </div>
+            </div>
+        </section>
+        <section class="grid-2-3">
+            <p class="section-header">Packages</p>
+            <div class="offer-list products">
+                <div class="item">
+                    <img class="image" src="images/furnitures/package-2.jpg">
+                    <p class="brand">Cushy Camper</p>
+                    <p class="name">Cushy Camper Premium Hammock with Rain Fly, Bug Net, Tree Straps, and Dry Bag -
+                        Complete Camping Hammock System with Mesh Bug Net - Outdoor Combo Kit with Rainfly Bundle for
+                        Backpacking</p>
+
+                    <p><span class="price-small">$89</span></p>
+                    <div class="rating">
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                    </div><br>
+                    <button class="rounded-border-button-2">ADD TO CART</button>
+                </div>
+                <div class="item">
+                    <img class="image" src="images/furnitures/package-3.jpg">
+                    <p class="brand">Covacure</p>
+                    <p class="name">Covacure Camping Hammock - Lightweight Portable Hammocks with 2 Tree Straps, Outdoor
+                        Hammock for Indoor, Hiking, Camping, Backpacking, Travel, Garden, Beach</p>
+
+                    <p><span class="price-small">$16</span></p>
+                    <div class="rating">
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                        <img class="star" src="icons/star.png" />
+                    </div><br>
+                    <button class="rounded-border-button-2">ADD TO CART</button>
+                </div>
+            </div>
+        </section>
+        <section class="grid-2-3">
+            <p class="section-header">Offers & Deals</p>
+        </section>
         <section class="offer-section">
             <div class="item">
                 <img class="top-brand-item" src="images/deal-1.jpg">
                 <div class="content">
                     <h1>Camping & Spa Spring Deal</h1>
                     <span>28.04.23 - 27.05.23</span><br>
-                    <span>28.04.23 - 27.05.23</span>
+                    <span>11.06.23 - 01.07.23</span>
                     <p>Enjoy one week of camping and spa in Grubhof's Wellness-Alm spa area for two in spring on an XXL
                         pitch or the Saalach Meadow tent field.</p>
 
@@ -39,77 +163,114 @@
                         <li>Fresh water hook-up</li>
                         <li>Grey water drainage</li>
                     </ul>
-                    <span class="price">€ 294.00</span>
+                    <span class="price">$294.00</span>
                 </div>
             </div>
             <div class="item">
-                <img class="top-brand-item" src="images/deal-1.jpg">
+                <img class="top-brand-item" src="images/offer-1.jpg">
                 <div class="content">
-                    <h1>Camping & Spa Spring Deal</h1>
-                    <span>28.04.23 - 27.05.23</span><br>
-                    <span>28.04.23 - 27.05.23</span>
-                    <p>Enjoy one week of camping and spa in Grubhof's Wellness-Alm spa area for two in spring on an XXL
-                        pitch or the Saalach Meadow tent field.</p>
+                    <h1>Sun-Skiing Week in Lofer</h1>
+                    <span>11.03.23 - 01.04.23</span><br>
+                    <span>11.06.23 - 01.07.23</span>
+                    <p>One week of sun skiing and camping on an XXL pitch with ski passes and spa bliss included at
+                        Grubhof in Lofer.</p>
 
 
                     <h3>Inclusive benefits</h3>
                     <ul>
-                        <li>7 nights on an XXL pitch or the Saalach Meadow</li>
-                        <li>For 2 people incl. WiFi</li>
-                        <li>Daily entry to the sauna & spa area (Wellness-Alm)</li>
-                        <li>5 kWh electricity per night included, each additional kWh € 0.90</li>
-                        <li>Fresh water hook-up</li>
-                        <li>Grey water drainage</li>
+                        <li>7 nights on an XXL pitch</li>
+                        <li>With frost-proof water hook-ups and drainage</li>
+                        <li>Free spa entry</li>
+                        <li>6 day ski passes for the Almenwelt Lofer (multi-award winning family ski resort)</li>
+                        <li>Children’s camping stay – their ski passes are free (up to 14 years)!</li>
+                        <li>Ski bus every 30 mins directly from Grubhof‘s ski depot</li>
                     </ul>
-                    <span class="price">€ 294.00</span>
+                    <span class="price">$688.00</span>
                 </div>
             </div>
             <div class="item">
-                <img class="top-brand-item" src="images/deal-1.jpg">
+                <img class="top-brand-item" src="images/offer-2.jpg">
                 <div class="content">
-                    <h1>Camping & Spa Spring Deal</h1>
+                    <h1>Camping Spring Package</h1>
                     <span>28.04.23 - 27.05.23</span><br>
-                    <span>28.04.23 - 27.05.23</span>
-                    <p>Enjoy one week of camping and spa in Grubhof's Wellness-Alm spa area for two in spring on an XXL
-                        pitch or the Saalach Meadow tent field.</p>
+                    <span>11.06.23 - 01.07.23</span>
+                    <p>One week of camping fun for two in spring on an XXL pitch or the Saalach Meadow tent field.</p>
 
 
                     <h3>Inclusive benefits</h3>
                     <ul>
-                        <li>7 nights on an XXL pitch or the Saalach Meadow</li>
+                        <li>7 nights on an XXL pitch or the Saalach Meadow/li>
                         <li>For 2 people incl. WiFi</li>
-                        <li>Daily entry to the sauna & spa area (Wellness-Alm)</li>
                         <li>5 kWh electricity per night included, each additional kWh € 0.90</li>
                         <li>Fresh water hook-up</li>
                         <li>Grey water drainage</li>
+                        <li>Lorem ipsum</li>
                     </ul>
-                    <span class="price">€ 294.00</span>
-                </div>
-            </div>
-            <div class="item">
-                <img class="top-brand-item" src="images/deal-1.jpg">
-                <div class="content">
-                    <h1>Camping & Spa Spring Deal</h1>
-                    <span>28.04.23 - 27.05.23</span><br>
-                    <span>28.04.23 - 27.05.23</span>
-                    <p>Enjoy one week of camping and spa in Grubhof's Wellness-Alm spa area for two in spring on an XXL
-                        pitch or the Saalach Meadow tent field.</p>
-
-
-                    <h3>Inclusive benefits</h3>
-                    <ul>
-                        <li>7 nights on an XXL pitch or the Saalach Meadow</li>
-                        <li>For 2 people incl. WiFi</li>
-                        <li>Daily entry to the sauna & spa area (Wellness-Alm)</li>
-                        <li>5 kWh electricity per night included, each additional kWh € 0.90</li>
-                        <li>Fresh water hook-up</li>
-                        <li>Grey water drainage</li>
-                    </ul>
-                    <span class="price">€ 294.00</span>
+                    <span class="price">$238.00</span>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="grid-container-3">
+        <div class="container">
+            <div>
+                <h6 class="footer-category">Information</h6>
+                <div>
+                    <a href="" class="footer-category-item hover-underline-animation">Camp and Hike</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Climbing</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Travel</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Men</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Women</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Footwear</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Brands</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Sale</a><br>
+                </div>
+            </div>
+            <div>
+                <h6 class="footer-category">Company</h6>
+                <div>
+                    <a href="" class="footer-category-item hover-underline-animation">About</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Blog</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Retail Store</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Events</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Promos</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">International</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Gift Certificates</a><br>
+                </div>
+            </div>
+            <div>
+                <h6 class="footer-category">Support</h6>
+                <div>
+                    <a href="" class="footer-category-item hover-underline-animation">My Account</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Order Status</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Shipping</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Returns</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Payment Methods</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">FAQs</a><br>
+                </div>
+            </div>
+            <div>
+                <h6 class="footer-category">Contact</h6>
+                <div>
+                    <a href="mailto:contact@rcc.com" target="_blank" class="footer-category-item hover-underline-animation">Email Us</a><br>
+                    <a href="" class="footer-category-item hover-underline-animation">Live Chat</a><br>
+                    <a href="tel:+8006001234" class="footer-category-item hover-underline-animation">800-600-1234</a><br>
+                </div>
+            </div>
+            <div>
+                <h6 class="footer-category">Social</h6>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank" class="footer-category-item hover-underline-animation">Facebook</a><br>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-category-item hover-underline-animation">Instagram</a><br>
+                    <a href="https://twitter.com/" target="_blank" class="footer-category-item hover-underline-animation">Twitter</a><br>
+                </div>
+            </div>
+        </div>
+        <div class="notice">
+            <p>&copy; Copyright 2022, Retail Camping Company</p>
+            <p>This website is for educational purpose only.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
