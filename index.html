@@ -11,18 +11,19 @@
 
 <body>
     <header>
-        <div class="slider">
-            <nav class="topnav" id="myTopnav">
+        <nav id="hamnav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+            <div id="hamitems">
                 <a href="index.html">Home</a>
                 <a href="equipments.html">Equipment</a>
                 <a href="furniture.html">Furniture</a>
                 <a href="reviews.html">Reviews</a>
                 <a href="basket.html">Basket</a>
                 <a href="offers.html">Offers</a>
-                <a href="javascript:void(0);" class="icon" onclick="onMenuClicked()">
-                    <span>Menu</span>
-                </a>
-            </nav>
+            </div>
+        </nav>
+        <div class="slider">
             <figure>
                 <div class="slide"><img src="images/slider-one.jpg"></div>
                 <div class="slide"><img src="images/slider-two.jpg"></div>
@@ -51,19 +52,21 @@
                 <img src="images/Bushcraft Survival Loadout and Menswear.jfif">
             </div>
             <div>
-            <div class="content">
-                <p class="title">First time discount!</p>
-                <span class="discount price-small">15% OFF</span><br><br>
-                <label class="review-input-label" id="email-label" for="email">Enter your email:</label><br>
-                <input class="styled-input" type="email" id="email" name="email" placeholder="example@gmail.com"><br><br>
-                <button type="submit" class="rounded-border-button-primary">UNLOCK 15% OFF</button><br><br>
-                <label class="rounded-border-button-3" for="close_ads" id="decline_offer">Decline Offer</label><br><br>
-                <p id="ads-note">**Exclusions apply. Does not apply to sale items & cannot be combined with other
-                    promos.</p>
-            </div>
-            <label for="close_ads" id="close_popup">
-                <span class="rounded-border-button-3">close</span>
-            </label>
+                <div class="content">
+                    <p class="title">First time discount!</p>
+                    <span class="discount price-small">15% OFF</span><br><br>
+                    <label class="review-input-label" id="email-label" for="email">Enter your email:</label><br>
+                    <input class="styled-input" type="email" id="email" name="email"
+                        placeholder="example@gmail.com"><br><br>
+                    <button type="submit" class="rounded-border-button-primary">UNLOCK 15% OFF</button><br><br>
+                    <label class="rounded-border-button-3" for="close_ads" id="decline_offer">Decline
+                        Offer</label><br><br>
+                    <p id="ads-note">**Exclusions apply. Does not apply to sale items & cannot be combined with other
+                        promos.</p>
+                </div>
+                <label for="close_ads" id="close_popup">
+                    <span class="rounded-border-button-3">close</span>
+                </label>
             </div>
         </div>
     </div>
@@ -72,7 +75,7 @@
             <p class="home-section-header">Our Top Picks</p>
             <div class="gear-list">
                 <div class="item">
-                    <img class="image"src="images/eq-5.jpg">
+                    <img class="image" src="images/eq-5.jpg">
                     <p class="brand">Sierra Designs</p>
                     <p class="name">Meteor 4</p>
                     <p><span class="price-small">$399</span></p>
@@ -86,7 +89,7 @@
                     <button class="rounded-border-button-2">ADD TO CART</button>
                 </div>
                 <div class="item">
-                    <img class="image"src="images/eq-9.jpg">
+                    <img class="image" src="images/eq-9.jpg">
                     <p class="brand">Camp Chef</p>
                     <p class="name">Everest 2 Burner Stove</p>
                     <p><span class="price-small">$166</span></p>
@@ -100,10 +103,10 @@
                     <button class="rounded-border-button-2">ADD TO CART</button>
                 </div>
                 <div class="item">
-                    <img class="image"src="images/furnitures/chair-1.jpg">
+                    <img class="image" src="images/furnitures/chair-1.jpg">
                     <p class="brand">Snow Peak</p>
                     <p class="name">Take! Bamboo Chair</p>
-                    
+
                     <p><s>$189</s> <span class="price-small">$170</span></p>
                     <div class="rating">
                         <img class="star" src="icons/star.png" />
@@ -115,7 +118,7 @@
                     <button class="rounded-border-button-2">ADD TO CART</button>
                 </div>
                 <div class="item">
-                    <img class="image"src="images/furnitures/table-3.jpg">
+                    <img class="image" src="images/furnitures/table-3.jpg">
                     <p class="brand">Big Agnes</p>
                     <p class="name">Soul Kitchen Table</p>
                     <p><span class="price-small">$149</span></p>
@@ -129,7 +132,7 @@
                     <button class="rounded-border-button-2">ADD TO CART</button>
                 </div>
                 <div class="item">
-                    <img class="image"src="images/eq-8.jpg">
+                    <img class="image" src="images/eq-8.jpg">
                     <p class="brand">Gregory</p>
                     <p class="name">Raincover 50-80L</p>
                     <p><span class="price-small">$39</span></p>
@@ -166,7 +169,7 @@
             <p class="home-section-header">Camping Gears</p>
             <div class="gear-list">
                 <div class="item">
-                    <img class="image"src="images/eq-2.jpg">
+                    <img class="image" src="images/eq-2.jpg">
                     <p class="brand">Black Diamond</p>
                     <p class="name">Expedition 3 WR Trekking Poles</p>
                     <p><span class="price-small">$169</span></p>
@@ -180,7 +183,7 @@
                     <button class="rounded-border-button-2">ADD TO CART</button>
                 </div>
                 <div class="item">
-                    <img class="image"src="images/eq-3.jpg">
+                    <img class="image" src="images/eq-3.jpg">
                     <p class="brand">Therm-a-Rest</p>
                     <p class="name">Trail Scout</p>
                     <p><span class="price-small">$59</span></p>
@@ -194,7 +197,7 @@
                     <button class="rounded-border-button-2">ADD TO CART</button>
                 </div>
                 <div class="item">
-                    <img class="image"src="images/eq-4.jpg">
+                    <img class="image" src="images/eq-4.jpg">
                     <p class="brand">Wolf and Grizzly</p>
                     <p class="name">Grill M1 Edition with Fire Set</p>
                     <p><span class="price-small">$114</span></p>
@@ -208,7 +211,7 @@
                     <button class="rounded-border-button-2">ADD TO CART</button>
                 </div>
                 <div class="item">
-                    <img class="image"src="images/eq-7.jpg">
+                    <img class="image" src="images/eq-7.jpg">
                     <p class="brand">Osprey</p>
                     <p class="name">Duro/Dyna Handheld</p>
                     <p><span class="price-small">$34</span></p>
@@ -222,7 +225,7 @@
                     <button class="rounded-border-button-2">ADD TO CART</button>
                 </div>
                 <div class="item">
-                    <img class="image"src="images/furnitures/stool-1.png">
+                    <img class="image" src="images/furnitures/stool-1.png">
                     <p class="brand">Keith</p>
                     <p class="name">Folding Titanium Stool</p>
                     <p><span class="price-small">$70</span></p>
@@ -340,7 +343,5 @@
         </div>
     </footer>
 </body>
-
-<script src="scripts/script.js"></script>
 
 </html>

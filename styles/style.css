@@ -13,17 +13,17 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.topnav {
-    display: block;
+/* WRAPPER */
+#hamnav {
     width: 100%;
-    overflow: hidden;
-    position: absolute;
-    z-index: 1;
+    background: var(--primary);
 }
 
-.topnav a {
-    float: left;
-    display: block;
+/* HORIZONTAL MENU ITEMS */
+#hamitems { display: flex; }
+
+#hamitems a {
+    flex-basis: 0;
     color: #f2f2f2;
     text-align: center;
     padding: 30px 20px;
@@ -31,14 +31,44 @@ body {
     font-size: 16px;
 }
 
-.topnav a:hover {
+#hamitems a:hover {
     background-color: rgba(0, 0, 0, 0.4);
-    font-size: 18px;
-    transform: scale(1.1);
 }
 
-.topnav .icon {
+/* HIDE HAMBURGER */
+#hamnav label,
+#hamburger {
     display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* BREAK INTO VERTICAL MENU */
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        padding: 20px 15px;
+        width: 100%;
+    }
+
+    /* SHOW HAMBURGER ICON */
+    #hamnav label {
+        display: inline-block;
+        color: white;
+        background: var(--primary);
+        font-style: normal;
+        font-size: 1.5em;
+        padding: 15px;
+    }
+
+    /* TOGGLE SHOW/HIDE MENU */
+    #hamitems {
+        display: none;
+    }
+
+    #hamnav input:checked~#hamitems {
+        display: block;
+    }
 }
 
 .slider {
@@ -1228,7 +1258,7 @@ footer .container {
 
 @media screen and (min-width: 621px) and (max-width: 1280px) {
 
-    
+
 
     .gear-list {
         grid-template-columns: 1fr 1fr 1fr;
@@ -1335,7 +1365,7 @@ footer .container {
     height: 150px;
     font-family: Arial, sans-serif;
     margin-top: 10px;
-    
+
 }
 
 .styled-label {
