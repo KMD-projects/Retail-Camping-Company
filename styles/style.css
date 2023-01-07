@@ -708,7 +708,7 @@ footer .container {
 /* Basket */
 .cart-section {
     display: grid;
-    grid-template-columns: 0.5f 1f 0.5f;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-column: 2 / 3;
     gap: 40px;
 }
@@ -1359,7 +1359,7 @@ footer .container {
     resize: vertical;
     padding: 8px;
     border-radius: 15px;
-    border: 0.5;
+    border: 0.5px;
     border-style: solid;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
     height: 150px;
