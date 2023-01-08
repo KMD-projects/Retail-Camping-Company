@@ -629,6 +629,11 @@ footer .container {
     margin-right: auto;
 }
 
+.write-review-section .content .title {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
 .review-input-label {
     font-family: 'Trebuchet MS', sans-serif;
 }
