@@ -946,14 +946,14 @@ footer .container {
     margin-top: 40px;
 }
 
-.furniture-promo-container {
-    grid-column: 2 / 3;
-}
-
-.furniture-promo-container .title {
+.furniture-promo-section .title {
     text-align: start;
     font-weight: bold;
     font-size: 2em;
+}
+
+.furniture-promo-container {
+    grid-column: 2 / 3;
 }
 
 .furniture-promo-container .video {
